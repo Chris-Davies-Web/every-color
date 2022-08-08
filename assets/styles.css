@@ -1,0 +1,41 @@
+:root {
+    --background: white;
+    --darkest: #321;
+    --text: #543;
+    --lightest: white;
+}
+
+html, body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--darkest);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+body * + * {
+    margin-top: 1rem;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    max-width: 90vw;
+    margin: 5rem auto;
+    border: 1px solid var(--darkest);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--lightest);
+}
