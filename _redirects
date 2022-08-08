@@ -1,2 +1,3 @@
 /hex/:value/:more/* /hex/:value 301
+/named/:value/:more/* /named/:value 301
 /* /.netlify/functions/color 200

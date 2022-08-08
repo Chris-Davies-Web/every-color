@@ -20,7 +20,6 @@ h1 {
 * {
     box-sizing: border-box;
     margin: 0;
-    white-space: pre-wrap;
 }
 
 body * + * {
@@ -29,11 +28,21 @@ body * + * {
 
 body {
     min-height: 100vh;
+    padding-top: 100px;
 }
 
 main {
     max-width: 90vw;
     margin: 5rem auto;
+    border: 1px solid var(--darkest);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--lightest);
+}
+
+header{
+    max-width: 90vw;
+    margin: auto;
     border: 1px solid var(--darkest);
     border-radius: 0.5rem;
     padding: 1rem 2rem;

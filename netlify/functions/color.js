@@ -6,20 +6,20 @@ function getHtml({type, values}){
     let colorValue;
     let displayName;
     if( type === 'hex') {
-        displayName = 'hex;'
+        displayName = 'Hex'
         const [hexValue = '000'] = values;
         colorValue = `#${hexValue}`;
     } else if (type === 'rgb') {
-        displayName = 'rgb'
+        displayName = 'RGB'
         const [r = 255, g = 255, b = 255] = values;
         colorValue = `rgb(${r} ${g} ${b})`;
 
     } else if(type === 'hsl') {
-        displayName = 'hsl'
+        displayName = 'HSL'
         const [h = 0, s = 100, l = 50] = values;
         colorValue = `hsl(${h} ${s}% ${l}%)`;
     } else if (type === 'named'){
-        displayName = 'named'
+        displayName = 'Named'
         const [color = 'black'] = values;
         colorValue = color;
     }
